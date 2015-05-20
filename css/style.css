@@ -1,0 +1,349 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+.clear {
+    clear: both;
+}
+.block {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 200px;
+}
+header>img {
+    margin: 36px 0 30px 126px;
+    cursor: pointer;
+}
+.menu {
+    width: 100%;
+    height: 94px;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    background: linear-gradient(#fcfcfc, #f8f8f8);
+    position: relative;
+}
+.menu nav {
+    margin-left: 120px;
+    float: left;
+}
+.menu nav a {
+    height: 100%;
+    height: 78px;
+    float: left;
+    border-right: 1px solid #c2c2c2;
+    padding: 5px 8px 12px 8px;
+    text-decoration: none;
+    color: #3e3e3e;
+}
+.menu nav a:first-child {
+    border-left: 1px solid #c2c2c2;
+}
+.menu nav a span {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    min-height: 38px;
+}
+.menu nav a h2 {
+    text-align: center;
+    font-size: 20px;
+}
+.menu nav a p {
+    font-size: 14px;
+}
+.menu nav a:hover {
+    background: linear-gradient(#ececec, #d1d1d1);
+}
+.search {
+    width: 300px;
+    height: 30px;
+    margin-right: 120px;
+    margin-top: 32px;
+}
+.search input {
+    width: 202px;
+    font-size: 11px;
+    padding: 7px 20px;
+    vertical-align: top;
+    background-color: #ebebeb;
+}
+.search button {
+    width: 50px;
+    height: 30px;
+    background: url(../img/18.png) center center no-repeat;
+    margin-left: -4px;
+}
+main {
+    margin-top: 35px;
+}
+.leftContent {
+    width: 630px;
+    float: left;
+    margin-left: 120px;
+}
+.jobs {
+    text-align: center;
+    padding: 8px 0 6px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #c2c2c2;
+}
+.leftContent>div:nth-child(3) {
+    margin-top: 30px;
+}
+.topic1 {
+    margin-top: 70px;
+    padding: 15px;
+    border: 1px solid #c2c2c2;
+}
+.topic1>div:first-child {
+    float: left;
+    border: 1px solid #c2c2c2;
+    text-align: center;
+    padding: 8px 8px 6px 8px;
+    margin-right: 28px;
+}
+.text1 h2 {
+    margin-bottom: 20px;
+}
+.text1 p {
+    font-size: 14px;
+    color: #adadad;
+}
+.text1 p:nth-child(2) {
+    margin-bottom: 30px;
+}
+.text1 p:nth-child(2) a {
+    color: #3e3e3e;
+}
+.seti {
+    margin-top: 38px;
+}
+.seti div {
+    width: 300px;
+    vertical-align: bottom;
+    margin-left: 9px;
+}
+.seti div button:nth-child(1) {
+    width: 50px;
+    height: 18px;
+    background: url(../img/10.png) center center no-repeat;
+    margin-right: 8px;
+}
+.seti div button:nth-child(2) {
+    width: 50px;
+    height: 18px;
+    background: url(../img/11.png) center center no-repeat;
+    margin-right: 8px;
+}
+.seti div button:nth-child(3) {
+    width: 50px;
+    height: 18px;
+    background: url(../img/12.png) center center no-repeat;
+}
+.seti>button:nth-child(2) {
+    width: 86px;
+    height: 28px;
+    background: url(../img/19.png) center center no-repeat;
+    float: right;
+    margin-top: -28px;
+}
+.push {
+    margin: 28px 0 0 15px;
+}
+.push button {
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+}
+.rightContent {
+    width: 300px;
+    margin-right: 120px;
+    float: right;
+}
+.rightContent .pic {
+    margin-bottom: 25px;
+}
+.rightContent .pic span {
+    display: inline-block;
+    padding: 8px 8px 4px 8px;
+    border: 1px solid #c2c2c2;
+    background-color: #ebebeb;
+    margin-bottom: 12px;
+}
+.rightContent .pic span:nth-child(2n+1) {
+    margin-right: 10px;
+}
+
+
+.borderSidebar {
+    width: 278px;
+    height: 440px;
+    background-color: #ebebeb;
+    margin-bottom: 30px;
+    border: 1px solid #c2c2c2;
+    padding: 10px;
+}
+.top {
+    position: relative;
+}
+.top li {
+    list-style: none;
+    position: inherit;
+}
+.top li a {
+    position: absolute;
+    top: 2px;
+    padding: 10px 8px;
+    background: linear-gradient(#f7f7f7, #e1e1e1);
+    text-decoration: none;
+    border-top: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    font-size: 16px;
+    color: #000;
+}
+.top li a:first-child {
+    border-left: 1px solid #c2c2c2;
+}
+.news1,
+.news2,
+.news3 {
+    height: 380px;
+    padding: 10px;
+    background-color: #fff;
+    overflow: auto;
+    border: 1px solid #c2c2c2;
+    border-top: none;
+}
+.clicknews1 .news1,
+.clicknews2 .news2,
+.clicknews3 .news3
+{
+    display: none;
+}
+.clicknews1.open .news1,
+.clicknews2.open .news2,
+.clicknews3.open .news3 
+{
+    display: block;
+}
+.top li:nth-child(3)>a {
+    right: -2px;
+}
+.top li:nth-child(2)>a {
+    left: 88px;
+}
+.top li>div {
+    position: absolute;
+    top: 42px;
+}
+.clicknews1.open .onclick,
+.clicknews2.open .onclick,
+.clicknews3.open .onclick {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+.foot {
+    height: 30px;
+}
+.content2 {
+    background: linear-gradient(#c4c4c4, #7d7d7d);
+    position: relative;
+}
+.bot {
+    width: 630px;
+    float: left;
+    margin-left: 120px;
+    margin-right: 10px;
+    padding: 36px 0 10px 0;
+}
+.bottomMenuLeft {
+    width: 250px;
+    float: left;
+}
+.bottomMenuLeft div {
+    height: 70px;
+    padding: 40px 5px 10px 5px;
+    border-bottom: 2px solid #252525;
+    font-size: 14px;
+    
+}
+.bottomMenuCenter>div {
+    height: 100px;
+    padding: 10px 5px 10px 5px;
+    border-bottom: 2px solid #252525;
+    font-size: 14px;
+}
+.bottomMenuCenter div div {
+    height: 62px;
+    margin-top: 32px;
+}
+.bottomMenuCenter>div>span {
+    height: 100%;
+    float: left;
+    display: inline-block;
+    margin-right: 15px;
+}
+.bottomMenuCenter div span img {
+    margin-top: 16px;
+}
+.bottomMenuLeft div>a,
+.bottomMenuCenter div div a {
+    text-decoration: none;
+    color: #000;
+}
+
+.bottomMenuLeft>div:last-child,
+.bottomMenuCenter>div:last-child
+{
+    border: none;
+    height: 100%;
+    padding: 15px 0 0 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bottomMenuCenter {
+    width: 320px;
+    float: right;
+}
+
+.bottomMenuRight {
+    width: 300px;
+    float: right;
+    margin-right: 120px;
+}
+.fb {
+    color: #fff;
+    text-decoration: none;
+}
+.bottomMenuRight {
+    padding: 36px 0 0 0;
+    font-size: 14px;
+}
+.bottomMenuRight h2 {
+    margin-bottom: 40px;
+}
+.bottomMenuRight p {
+    margin-bottom: 20px;
+}
+.content2>img {
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+}
+footer {
+    background-color: #404040;
+    padding: 2px 0 2px 0;
+}
+footer p {
+    margin-left: 60px;
+    font-size: 14px;
+    color: #fff;
+}
