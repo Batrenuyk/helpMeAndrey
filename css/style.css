@@ -218,9 +218,7 @@ label {
     border-left: 1px solid #c2c2c2;
 }
 
-.notebook > .news1,
-.notebook > .news2,
-.notebook > .news3 {
+.notebook > .news {
     height: 380px;
     padding: 10px;
     background-color: #fff;
@@ -229,165 +227,41 @@ label {
     border-top: 0px solid #fff;
     display: none;
 }
-.news1>div,
-.news2>div,
-.news3>div {
+.news>div {
     border-bottom: 1px solid #c2c2c2;
     padding: 10px 0px 15px 0;
     
 }
-.news1 div span img {
+.news div span img {
     border: 1px solid #c2c2c2;
 }
-.news2 div span img {
+.notebook div:nth-child(8) span img {
     margin-top: 21px;
 }
-.news1 div span,
-.news2 div span,
-.news3 div span {
+.news div span {
     float: left;
     margin-right: 5px;
 }
-.news2 div span {
+.notebook div:nth-child(7) span {
     height: 60px; 
     display: block;
 }
-.news1>div>p,
-.news2>div>p,
-.news3>div>p {
+.news>div>p {
     font-size: 14px;
     
 }
-.news1>div>p:nth-child(3),
-.news2>div>p:nth-child(3),
-.news3>div>p:nth-child(3) {
+.news>div>p:nth-child(3) {
     float: left;
     font-size: 12px;
     margin-top: 15px;
     color: #adadad;
 }
-.news1>div>p:nth-child(3) b,
-.news2>div>p:nth-child(3) b,
-.news3>div>p:nth-child(3) b {
+.news>div>p:nth-child(3) b {
     color: #000;
 }
 .clear {
     clear: both;
 }
-/*.borderSidebar {
-    width: 278px;
-    height: 442px;
-    background-color: #ebebeb;
-    margin-bottom: 30px;
-    border: 1px solid #c2c2c2;
-    padding: 10px;
-}
-.top {
-    position: relative;
-}
-.top li {
-    list-style: none;
-    position: inherit;
-}
-.top li a {
-    position: absolute;
-    top: 2px;
-    padding: 10px 8px;
-    background: linear-gradient(#f7f7f7, #e1e1e1);
-    text-decoration: none;
-    border-top: 1px solid #c2c2c2;
-    border-right: 1px solid #c2c2c2;
-    border-bottom: 1px solid #c2c2c2;
-    font-size: 16px;
-    color: #000;
-}
-.top li a:first-child {
-    border-left: 1px solid #c2c2c2;
-}
-.news1,
-.news2,
-.news3 {
-    height: 380px;
-    padding: 10px;
-    background-color: #fff;
-    overflow: auto;
-    border: 1px solid #c2c2c2;
-    border-top: none;
-}
-.news1>div,
-.news2>div,
-.news3>div {
-    border-bottom: 1px solid #c2c2c2;
-    padding: 10px 0px 15px 0;
-    
-}
-.news1 div span img {
-    border: 1px solid #c2c2c2;
-}
-.news2 div span img {
-    margin-top: 21px;
-}
-.news1 div span,
-.news2 div span,
-.news3 div span {
-    float: left;
-    margin-right: 5px;
-}
-.news2 div span {
-    height: 60px;
-    
-    display: block;
-}
-.news1>div>p,
-.news2>div>p,
-.news3>div>p {
-    font-size: 14px;
-    
-}
-.news1>div>p:nth-child(3),
-.news2>div>p:nth-child(3),
-.news3>div>p:nth-child(3) {
-    float: left;
-    font-size: 12px;
-    margin-top: 15px;
-    color: #adadad;
-    width: 170px;
-}
-.news1>div>p:nth-child(3) b,
-.news2>div>p:nth-child(3) b,
-.news3>div>p:nth-child(3) b {
-    color: #000;
-}
-.clicknews1 .news1,
-.clicknews2 .news2,
-.clicknews3 .news3
-{
-    display: none;
-}
-.clicknews1.open .news1,
-.clicknews2.open .news2,
-.clicknews3.open .news3 
-{
-    display: block;
-}
-.top li:nth-child(3)>a {
-    right: 0px;
-}
-.top li:nth-child(2)>a {
-    left: 88px;
-}
-.top li>div {
-    position: absolute;
-    top: 42px;
-}
-.clicknews1.open .onclick,
-.clicknews2.open .onclick,
-.clicknews3.open .onclick {
-    background: #fff;
-    border-bottom: 1px solid #fff;
-}*/
-
-
 
 .foot {
     height: 30px;
