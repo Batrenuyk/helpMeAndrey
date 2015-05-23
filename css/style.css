@@ -177,7 +177,6 @@ main {
     margin-right: 10px;
 }
 
-
 .notebook {
     width: 277px;
     height: 442px;
@@ -206,6 +205,8 @@ label {
     border-left: 0px;
     font-size: 15px;
     color: #000;
+    cursor: pointer;
+
 }
 .notebook > input:nth-of-type(1):checked ~ label:nth-of-type(1),
 .notebook > input:nth-of-type(2):checked ~ label:nth-of-type(2),
@@ -218,7 +219,9 @@ label {
     border-left: 1px solid #c2c2c2;
 }
 
-.notebook > .news {
+.notebook > .news1,
+.notebook > .news2,
+.notebook > .news3 {
     height: 380px;
     padding: 10px;
     background-color: #fff;
@@ -227,42 +230,51 @@ label {
     border-top: 0px solid #fff;
     display: none;
 }
-.news>div {
+.news1>div,
+.news2>div,
+.news3>div {
     border-bottom: 1px solid #c2c2c2;
     padding: 10px 0px 15px 0;
     
 }
-.news div span img {
+.news1 div span img {
     border: 1px solid #c2c2c2;
 }
-.notebook div:nth-child(8) span img {
+.news2 div span img {
     margin-top: 21px;
 }
-.news div span {
+.news1 div span,
+.news2 div span,
+.news3 div span {
     float: left;
     margin-right: 5px;
 }
-.notebook div:nth-child(7) span {
+.news2 div span {
     height: 60px; 
     display: block;
 }
-.news>div>p {
+.news1>div>p,
+.news2>div>p,
+.news3>div>p {
     font-size: 14px;
     
 }
-.news>div>p:nth-child(3) {
+.news1>div>p:nth-child(3),
+.news2>div>p:nth-child(3),
+.news3>div>p:nth-child(3) {
     float: left;
     font-size: 12px;
     margin-top: 15px;
     color: #adadad;
 }
-.news>div>p:nth-child(3) b {
+.news1>div>p:nth-child(3) b,
+.news2>div>p:nth-child(3) b,
+.news3>div>p:nth-child(3) b {
     color: #000;
 }
 .clear {
     clear: both;
 }
-
 .foot {
     height: 30px;
 }
