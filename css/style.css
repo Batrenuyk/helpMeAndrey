@@ -177,58 +177,46 @@ main {
     margin-right: 10px;
 }
 
-.notebook {
-    width: 277px;
+
+.borderSidebar {
+    width: 278px;
     height: 442px;
     background-color: #ebebeb;
     margin-bottom: 30px;
     border: 1px solid #c2c2c2;
     padding: 10px;
 }
-
-.notebook > input:nth-of-type(1):checked ~ div:nth-of-type(1),
-.notebook > input:nth-of-type(2):checked ~ div:nth-of-type(2),
-.notebook > input:nth-of-type(3):checked ~ div:nth-of-type(3)
- {
-    display: block;
+.top {
+    position: relative;
 }
-
-.notebook_radio {
-    display: none;  
+.top li {
+    list-style: none;
+    position: inherit;
 }
-label {
-    display: block;
-    float: left;
-    background: linear-gradient(#f7f7f7, #e1e1e1);;
+.top li a {
+    position: absolute;
+    top: 2px;
     padding: 10px 8px;
-    border: 1px solid #c2c2c2;
-    border-left: 0px;
-    font-size: 15px;
+    background: linear-gradient(#f7f7f7, #e1e1e1);
+    text-decoration: none;
+    border-top: 1px solid #c2c2c2;
+    border-right: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    font-size: 16px;
     color: #000;
-    cursor: pointer;
-
 }
-.notebook > input:nth-of-type(1):checked ~ label:nth-of-type(1),
-.notebook > input:nth-of-type(2):checked ~ label:nth-of-type(2),
-.notebook > input:nth-of-type(3):checked ~ label:nth-of-type(3)
- {
-    background: #fff;
-    border-bottom: 1px solid #fff;
-}
-.notebook label:nth-child(2) {
+.top li a:first-child {
     border-left: 1px solid #c2c2c2;
 }
-
-.notebook > .news1,
-.notebook > .news2,
-.notebook > .news3 {
+.news1,
+.news2,
+.news3 {
     height: 380px;
     padding: 10px;
     background-color: #fff;
     overflow: auto;
     border: 1px solid #c2c2c2;
-    border-top: 0px solid #fff;
-    display: none;
+    border-top: none;
 }
 .news1>div,
 .news2>div,
@@ -250,7 +238,8 @@ label {
     margin-right: 5px;
 }
 .news2 div span {
-    height: 60px; 
+    height: 60px;
+    
     display: block;
 }
 .news1>div>p,
@@ -266,15 +255,44 @@ label {
     font-size: 12px;
     margin-top: 15px;
     color: #adadad;
+    /*width: 170px;*/
 }
 .news1>div>p:nth-child(3) b,
 .news2>div>p:nth-child(3) b,
 .news3>div>p:nth-child(3) b {
     color: #000;
 }
-.clear {
-    clear: both;
+.clicknews1 .news1,
+.clicknews2 .news2,
+.clicknews3 .news3
+{
+    display: none;
 }
+.clicknews1.open .news1,
+.clicknews2.open .news2,
+.clicknews3.open .news3 
+{
+    display: block;
+}
+.top li:nth-child(3)>a {
+    right: 0px;
+}
+.top li:nth-child(2)>a {
+    left: 88px;
+}
+.top li>div {
+    position: absolute;
+    top: 42px;
+}
+.clicknews1.open .onclick,
+.clicknews2.open .onclick,
+.clicknews3.open .onclick {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+
+
 .foot {
     height: 30px;
 }
