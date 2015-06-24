@@ -1,7 +1,209 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 .clear {
     clear: both;
+}
+.block {
+    width: 380px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+p {
+    font-size: 7px;
+    color: #99a9a3;
+}
+a {
+    font-size: 10px;
+    color: #f0e2ca;
+}
+h3 {
+    font-size: 10px;
+    color: #cabcc6;
+}
+header {
+    height: 16px;
+    background: linear-gradient(#1f1f1f, #131313);
+    padding: 0 20px 0 20px;
+    margin-bottom: 2px;
+}
+.top > p {
+    color: #eaece5;
+    float: left;
+    line-height: 17px;
+}
+form {
+    float: right;
+    position: relative;
+    margin-top: 1px;
+}
+form input {
+    width: 74px;
+    height: 12px;
+    
+    padding-right: 10px;
+}
+form img {
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    cursor: pointer;
+}
+main {
+    background: #303030;
+    padding: 10px 20px 5px 20px;
+}
+.topMain {
+    margin-bottom: 20px;
+}
+h1 {
+    color: #fefefe;
+    font-size: 20px;
+    float: left;
+}
+nav {
+    float: right;
+}
+nav a {
+    padding: 3px;
+    border: 2px solid #727272;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+nav a:hover {
+    color: #403b34;
+    background: #fff;
+}
+.active{
+    color: #403b34;
+    background: #fff;
+}
+.centerMain {
+    margin-bottom: 8px;
+}
+.one {
+    margin-bottom: 12px;
+}
+.o {
+    width: 130px;
+    float: left;
+}
+.one div h3 {
+    margin-bottom: 8px;
+}
+.one img {
+    float: right;
+}
+.two img {
+    margin-left: 10px;
+    margin-right: 16px;
+    float: left;
+}
+.a {
+    width: 210px;
+    float: right;
+}
+.a h3 {
+    font-size: 8px;
+    text-align: center;
+}
+.a p:nth-child(odd) {
+    color: #fff;
+    margin: 8px 0 4px 0;
+}
+.seti {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.seti a {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+}
+#vk {
+    background: url('../img/4.1.png');
+}
+#ok {
+    background: url('../img/4.2.png');
+}
+#fs {
+    background: url('../img/4.3.png');
+}
+#os {
+    background: url('../img/4.4.png');
+}
+#fb {
+    background: url('../img/4.5.png');
+}
+#tw {
+    background: url('../img/4.6.png');
+}
+#ws {
+    background: url('../img/4.7.png');
+}
+.polosa {
+    border-bottom: 2px solid #343434;
+}
+.uslugi div h3 {
+    float: left;
+    margin-top: 5px;
+}
+.right {
+    float: right;
+    margin-right: 8px;
+}
+.uslugi > div > div img {
+    cursor: pointer;
+}
+.oneMenu {
+    margin-top: 10px;
+}
+.oneMenu .twoList {
+    width: 79px;   
+}
+.oneMenu .oneList {
+    width: 107px;
+}
+.oneMenu .twoList,
+.oneMenu .oneList{
+    background: #373737;
+    margin-right: 6px;
+    float: left;
+    padding: 1px 0 5px 0;
+}
+.oneMenu .twoList:last-child {
+    margin-right: 0;
+}
+.oneMenu div span {
+    display: block;
+    text-align: center;
+}
+.oneMenu div p {
+    text-align: center;
+}
+.oneMenu div p:nth-child(even) {
+    color: #fff;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+#two {
+    margin-top: 10px;
+}
+main > p {
+    margin-top: 8px;
+}
+footer {
+    height: 20px;
+    background: #212121;
+    padding: 0 20px 0 20px;
+}
+footer p {
+    color: #fff;
+    line-height: 20px;
+}
+footer p a {
+    font-size: 7px;
+    color: #99a9a3;
 }

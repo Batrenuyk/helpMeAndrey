@@ -1,18 +1,45 @@
-function del(){
-    two= document.body.getElementsByTagName('img')[1];
-    document.body.childNodes[1].removeChild(two);
-}
-function cre(){
-    myImg=document.createElement('img');    
-    document.body.childNodes[1].appendChild(myImg);
-    document.getElementsByTagName('img')[4].src="img/5.png";
-}
-function cha(){
-    img2= document.getElementsByTagName('img')[1];
-    img4= document.getElementsByTagName('img')[3];
-    document.body.childNodes[1].replaceChild(img4,img2);
-    
-    myImg2=document.createElement('img');    
-    document.body.childNodes[1].appendChild(myImg2);
-    document.getElementsByTagName('img')[3].src="img/2.png";
-}
+
+$('#button1').click(function(){
+    $('#ref_1').text('vishel zaychik pogylyat');
+});
+
+
+
+$('.reference2 .dano input').click(function(){
+    $('.reference2 li').not("li:nth-child(2)").remove();
+});
+
+
+
+$('.reference3 .dano input').click(function(){
+    $('.reference3 .dano').append('<ul id="ololo"></ul>');
+    $($('.reference3 .dano ul li').get().reverse()).each(function() {
+    var a = $(this).text();
+        $('#ololo').append('<li>'+a+'</li>');
+});
+$('#el').css({display: 'none'});
+});
+
+
+
+$('.reference4 .dano input').click(function(){
+    $('#button1').css({background:'#D37373'});
+});
+
+
+
+$('.reference5 .dano input').click(function(){
+    $('input').css({background:'#D37373'});
+});
+
+
+
+$('.reference6 .dano input').click(function(){
+    $('.hidden').css({display: 'block'});
+});
+
+
+
+$('.reference7 .dano input').click(function(){
+    window.scrollTo(0,0);
+});
