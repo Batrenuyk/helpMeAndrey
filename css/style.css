@@ -175,7 +175,7 @@ nav a:hover {
 .oneMenu .threeList
 {
     background: #373737;
-    margin-right: 6px;
+    margin: 0 3px;
     float: left;
     padding: 1px 0 5px 0;
 }
@@ -216,4 +216,14 @@ footer p a {
 }
 .threeList {
     display: none;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    transition: all 0.4s ease 0s;
 }

@@ -1,12 +1,38 @@
+var $container = $('.carousel .carousel-container'),
+    $items = $container.find('.twoList'),
+    itemMargin = parseInt($items.css('marginRight')),
+    containerWidth = ($items.width() + itemMargin * 2) * $items.length;
+    carousel = {
+        step: 4,
+        move: function(direction) {
+            var containerMargin = parseInt($container.css('margin-left')),
+                diff = (itemMargin * 2 + $items.width()) * carousel.step;
+        
+            if(direction === 'forward' && containerMargin <= -containerWidth) {
+                // дошло до конца - ничего не делаем
+            } else if(direction === 'forward' && containerMargin > -containerWidth) {
+                // прокручиваем вперед на количество carousel.step
+                $container.css('margin-left', containerMargin - diff);
+            
+            } else if(direction === 'back' && containerMargin >= 0) {
+                // дошло до начала - ничего не делаем
+            } else if(direction === 'back' && containerMargin < 0) {
+                // прокручиваем назад на количество carousel.step
+                $container.css('margin-left', containerMargin + diff);
+            
+            }
+        }
+    }
 
-$('#right1').click(function(){
-    $('.twoList').hide([100]);
-    $('.threeList').show([100]);
+$container.width(containerWidth);
+
+$('#right1').on('click', function(event) {
+    carousel.move('forward');
 });
 
-
-
-
+$('#left1').on('click', function(event) {
+    carousel.move('back');
+});
 
 //$('#button1').click(function(){
 //    $('#ref_1').text('vishel zaychik pogylyat');
