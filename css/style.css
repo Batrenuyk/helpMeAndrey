@@ -154,26 +154,33 @@ nav a:hover {
     float: right;
     margin-right: 8px;
 }
+.uslugi {
+    height: 120px;
+}
 .uslugi > div > div img {
     cursor: pointer;
 }
 .oneMenu {
     margin-top: 10px;
 }
-.oneMenu .twoList {
+.oneMenu .twoList,
+.oneMenu .threeList {
     width: 79px;   
 }
 .oneMenu .oneList {
     width: 107px;
 }
 .oneMenu .twoList,
-.oneMenu .oneList{
+.oneMenu .oneList,
+.oneMenu .threeList
+{
     background: #373737;
     margin-right: 6px;
     float: left;
     padding: 1px 0 5px 0;
 }
-.oneMenu .twoList:last-child {
+.oneMenu .twoList:last-child,
+.oneMenu .threeList:last-child {
     margin-right: 0;
 }
 .oneMenu div span {
@@ -206,4 +213,7 @@ footer p {
 footer p a {
     font-size: 7px;
     color: #99a9a3;
+}
+.threeList {
+    display: none;
 }
