@@ -11,15 +11,15 @@ var $container = $('.carousel .carousel-container'),
                 visibleItems = itemWidth * 4;
         
             if(direction === 'forward' && containerMargin <= -(containerWidth - visibleItems)) {
-                // дошло до конца - ничего не делаем
+                // doshlo do kontsa - nichego ne delaem
             } else if(direction === 'forward' && containerMargin > -(containerWidth - visibleItems)) {
-                // прокручиваем вперед на количество carousel.step
+                // prokruchivaem vpered na kolichestvo carousel.step
                 $container.css('margin-left', containerMargin - diff);
             
             } else if(direction === 'back' && containerMargin >= 0) {
-                // дошло до начала - ничего не делаем
+                // doshlo do nachala - nichego ne delaem
             } else if(direction === 'back' && containerMargin < 0) {
-                // прокручиваем назад на количество carousel.step
+                // prokruchivaem nazad na kolichestvo carousel.step
                 $container.css('margin-left', containerMargin + diff);
             
             }
